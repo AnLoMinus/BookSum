@@ -1,0 +1,212 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(135deg, #0078d4, #005a9e);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+}
+
+.section h2 {
+  color: #0078d4;
+  border-bottom: 2px solid #0078d4;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.book {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-right: 4px solid #0078d4;
+}
+
+.book h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.book ul {
+  padding-right: 1.5rem;
+}
+
+.book li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #fff;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #fff;
+  background: #0078d4;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+footer a:hover {
+  background: #005a9e;
+  text-decoration: none;
+}
+
+.book strong {
+  color: #0078d4;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .book {
+    padding: 1rem;
+  }
+}
+
+.header-description {
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.header-description p {
+  margin: 0.5rem 0;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .header-description {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+  }
+}
+
+/* עיצוב קטגוריות */
+.categories-filter {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #0078d4;
+  border-radius: 20px;
+  background: transparent;
+  color: #0078d4;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #0078d4;
+  color: white;
+}
+
+/* עיצוב תגיות */
+.book-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.8rem;
+  background: #e9ecef;
+  border-radius: 12px;
+  color: #495057;
+}
+
+/* עיצוב חיפוש */
+.search-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#searchBooks {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+/* עיצוב סיכום מהיר */
+.quick-summary {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.key-quotes {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-right: 3px solid #2c3e50;
+}
+
+.key-quotes ul {
+  margin: 10px 20px;
+  padding: 0;
+}
+
+.key-quotes li {
+  margin: 5px 0;
+  line-height: 1.4;
+  color: #34495e;
+}
